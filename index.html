@@ -797,7 +797,7 @@ color:#fff;
 <div class="result" id="finalResult"></div>
 
 <div class="actions">
-<button class="btn-premium">Upgrade ke Premium</button>
+<button class="btn-premium">Upgrade ke Platinum</button>
 <button class="btn-back" onclick="location.reload()">Kembali ke Halaman Utama</button>
 </div>
 </div>
@@ -871,7 +871,7 @@ setTimeout(typeMessage,500);
 
 // true  = DISETUJUI
 // false = TIDAK DISETUJUI
-const MANUAL_APPROVAL = false; // <-- UBAH DI SINI SAJA
+const MANUAL_APPROVAL = true; // <-- UBAH DI SINI SAJA
 
 function showResult(){
 document.getElementById("processScreen").style.display="none";
@@ -879,7 +879,7 @@ document.getElementById("resultScreen").style.display="block";
 
 document.getElementById("finalResult").innerHTML =
 MANUAL_APPROVAL
-? "✅ Order <span style='color:#00ffcc'>DISETUJUI</span>"
+? "✅ Order <span style='color:#00ffcc'>DISETUJUI</span> <p>Permintaan anda sudah di terima dan akan di proses pada 1 jam berikutnya</p>"
 : "❌ Link<span style='color:#ff6b6b'>VALIDASI</span> <p>anda belum melakukan validasi ID kepemilikan</p>";
 }
 
@@ -988,8 +988,8 @@ function toggleAI(){
 
 /* Fake AI Brain */
 const aiReplies = [
-  "Sepertinya anda bukan user premium  . Ayo upgrade untuk menggunakan fitur dan layanan",
-  "Tim kami siap membantu jika ada kendala 😊 klik go premium"
+  "Maintenance sistem  . Layanan sedang di perbaharui",
+  "Tim kami sedang maintenance untuk meningkatkan sistem 😊 "
 ];
 
 function sendAI(){
