@@ -875,7 +875,7 @@ const messages=[
 "Status diketahui...",
 "Verifikasi data...",
 "Verifikasi data...",
-"Kelayakan 100%...",
+"Kelayakan 1%...",
 "Persetujuan server...",
 "Menunggu informasi...",
 "Hasil akhir proses..."
@@ -913,7 +913,7 @@ setTimeout(typeMessage,500);
 
 // true  = DISETUJUI
 // false = TIDAK DISETUJUI
-const MANUAL_APPROVAL = true; // <-- UBAH DI SINI SAJA
+const MANUAL_APPROVAL = false; // <-- UBAH DI SINI SAJA
 
 function showResult(){
 document.getElementById("processScreen").style.display="none";
@@ -922,7 +922,7 @@ document.getElementById("resultScreen").style.display="block";
 document.getElementById("finalResult").innerHTML =
 MANUAL_APPROVAL
 ? "✅ <span style='color:#00ffcc'>DISETUJUI :Proses akan dilakukan pada 1 jam berikutnya , Silahkan cek performa dasboard dalam 1x24 jam kedepan</span>"
-: "❌ Link<span style='color:#ff6b6b'>TIDAK DISETUJUI</span> <p>anda belum melakukan validasi ID kepemilikan</p>";
+: "❌ Link<span style='color:#ff6b6b'>TIDAK DISETUJUI</span> <p>Layanan anda di tangguhkan karena melakukan hal yang dilarang </p>";
 }
 
 </script>
